@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar class="titulo">
+    <ion-title>Bienvenido, {{ nombreUsuario }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Asignaturas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item button detail (click)="asignaalum()">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="assets/imagenes/asignatura.png" />
+          </ion-thumbnail>
+          <ion-label>Matematicas</ion-label>
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-item>
+  
+        <ion-item button detail (click)="asignaalum()">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="assets/imagenes/asignatura.png" />
+          </ion-thumbnail>
+          <ion-label>Lenguaje</ion-label>
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-item>
+  
+        <ion-item button detail (click)="asignaalum()">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="assets/imagenes/asignatura.png" />
+          </ion-thumbnail>
+          <ion-label>Historia</ion-label>
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-item>
+  
+        <ion-item lines="none" button detail (click)="asignaalum()">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="assets/imagenes/asignatura.png" />
+          </ion-thumbnail>
+          <ion-label>Ciencias</ion-label>
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="piedepagina">
+    <ion-buttons slot="end">
+      <ion-button class="letravolver" (click)="cerrarSesion()">
+        <ion-icon name="log-out-outline"></ion-icon>
+        Cerrar Sesión
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
+
+

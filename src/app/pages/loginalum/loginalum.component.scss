@@ -1,0 +1,35 @@
+.titulo{
+    --background:rgb(39, 1, 66);
+    color:aliceblue;
+}
+.btn {
+    --background: rgb(80, 1, 136);
+    display: block;
+    margin-left: auto;
+    margin-right: 0; 
+}
+
+.btnrestablecer {
+    --background: rgb(80, 1, 136);
+    font-size: 12px; 
+    padding: 5px 10px; 
+    margin-left: auto; 
+    display: block; 
+    width: auto; 
+}
+
+.error-mensaje {
+    color: red;  
+    font-size: 14px;  
+    font-weight: bold;  
+    margin-top: 10px;  
+    text-align: center;  
+}
+
+.piedepagina{
+    --background: rgb(121, 17, 195);
+}
+
+.letravolver{
+    --color:aliceblue;
+}

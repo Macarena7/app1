@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="titulo">
+    <ion-title>
+      Registro de Asistencia
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="contenedor">
+  <div class="card">
+    <div class="card-border-top">
+    </div>
+    <img class="img" src="assets/imagenes/asistencia.jpg"> 
+    <span> Asignatura</span>
+    <p class="job">En esta asignatura se aprenderá a como crear aplicaciones híbridas. Fecha: 29/09/2024, Hora: 22:00 hrs.</p>
+    <button (click)="mostrarQR()">Haz click aqui para generar el codigo QR</button>
+      <!--Imagen de código QR cuando se haga click-->
+      <div *ngIf="mostrarCodigoQR" class="qr-container">
+        <img src="assets/imagenes/qr-code.png" alt="Código QR" />
+      </div>
+  </div>
+</div>
+</ion-content>
+
+
+<ion-toolbar class="piedepagina">
+  <ion-buttons slot="end">
+    <ion-button class="letravolver" (click)="cerrarSesion()">
+      <ion-icon name="log-out-outline"></ion-icon>
+      Cerrar Sesión
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+

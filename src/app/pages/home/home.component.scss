@@ -1,0 +1,25 @@
+.btn {
+    --background: rgb(80, 1, 136);
+    width: 80%;
+    max-width: auto; 
+    margin: 70px auto; 
+    display: block; 
+    height: 40px; 
+    font-size: 15px; 
+}
+.titulo{
+    --background:rgb(39, 1, 66);
+    color:aliceblue;
+}
+.imageninicio{
+    display: block;
+    margin: 15px auto 0 auto; 
+    width: 80%; 
+    height: auto; 
+}
+
+.logo{
+    max-height: 30px; 
+    max-width: 100px;  
+    object-fit: contain; 
+}

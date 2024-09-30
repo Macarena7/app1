@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar class="titulo">
+    <ion-title>
+      Restablecer Contraseña
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Complete los campos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form [formGroup]="formularioRestablecer">
+        <ion-item>
+          <ion-label position="floating">Nombre de usuario</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <div *ngIf="formularioRestablecer.get('nombre')?.touched && formularioRestablecer.get('nombre')?.invalid" class="error-mensaje">
+          El nombre de usuario es obligatorio.
+        </div>
+
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input formControlName="correo" type="email"></ion-input>
+        </ion-item>
+        <div *ngIf="formularioRestablecer.get('correo')?.touched && formularioRestablecer.get('correo')?.invalid" class="error-mensaje">
+          Introduzca un correo válido.
+        </div>
+
+        <br>
+        <ion-button class="btn" expand="block" (click)="restablecerContrasena()">Restablecer Contraseña</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="piedepagina">
+    <ion-buttons slot="start">
+      <ion-button class="letravolver" (click)="atras()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Volver
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
